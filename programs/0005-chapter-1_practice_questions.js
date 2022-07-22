@@ -75,3 +75,61 @@
 // // 2
 
 // console.log( dictionary[ "Apple" ] )
+
+
+// >>============================================================================================================>
+// >>============================================================================================================>
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~End~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// >>============================================================================================================>
+// >>============================================================================================================>
+
+
+// Pre - increment and Post - increment
+
+// Post
+
+// 
+
+// let i = 1
+
+// console.log( i, "Before value of i" );
+
+// let j = i++
+
+
+// console.log( i, "Before value of i" );
+
+// let j = i++
+
+// console.log( i, "After value of i" );
+// console.log( j, "After value of j" );
+
+
+
+// let i1 = 1
+
+// console.log( i1, "Before value of i" );
+
+// let j1 = ++i1
+
+// console.log( i1, "After value of i" );
+// console.log( j1, "After value of j" );
+
+
+// let i1 = 1
+
+// console.log( i1, "Before value of i" );
+
+// let j1 = ++i1
+
+// console.log( i1, "After value of i" );
+// console.log( j1, "After value of j" );
+
+
+// User input and get output in console then comment first line only
+
+// const prompt = require( 'prompt-sync' )();
+
+// const name = prompt( 'What is your name?' );
+// console.log( `Hey there ${ name }` );
+
