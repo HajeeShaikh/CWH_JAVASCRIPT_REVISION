@@ -1,3 +1,4 @@
+/*
 const prompt = require( "prompt-sync" )();
 
 let P1Contribution = prompt( "Enter contribution of Fauzan =====> : " )
@@ -188,7 +189,7 @@ console.log( "CollectedAmountHolder now have =====> : ", CollectedAmountHolder )
 
 
 
-/*
+
 
 // Paying to the different contributors
 
