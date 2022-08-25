@@ -1,9 +1,9 @@
-const prompt = require( "prompt-sync" )()
-
 /* 
 // console.log( ( "Introduction to JavaScript" ).toLowerCase() )
 // console.log( ( "Introduction to JavaScript" ).toLowerCase().replace( / /g, "_" ) )
 */
+
+const prompt = require( "prompt-sync" )()
 
 // Task-1) Write a program which will help in renaming a file as 
 
