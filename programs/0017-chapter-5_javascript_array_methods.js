@@ -1,5 +1,5 @@
-/*
 let Numbers = [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
+/*
 
 // push(<Anything>) method
 
@@ -25,5 +25,17 @@ console.log( Numbers );
 let unshiftReturns = Numbers.unshift( -1 )
 console.log( "unshiftReturns length:===>", unshiftReturns );
 console.log( Numbers );
+
+
+// toString() 
+
+let afterToString = Numbers.toString()
+console.log( "afterToString:===>", afterToString, typeof afterToString );
+
+// join()
+
+let afterJoin = Numbers.join( " :$-<>-$: " )
+console.log( afterJoin, typeof afterJoin );
+
 
 */
