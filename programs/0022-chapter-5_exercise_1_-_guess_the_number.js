@@ -51,6 +51,7 @@ while ( randomNumber != guessNumber )
 console.log( "You have guessed the random number in ", attemptCounter, "attempt/s." );
 console.log( "Your score is:===> ", ( 100 - attemptCounter ), "...!" );
 */
+/*
 
 // Try for dynamic solution/hacking....!
 
@@ -73,7 +74,7 @@ for ( let i = 0; i <= 100; i++ )
 {
   checkArray.push( i )
 }
-
+*/
 /* 
 
 // shortcut to find the random number without getting prompt
@@ -83,6 +84,7 @@ console.log( checkArray.indexOf( randomNumber ) );
 // End of shortcut
 
 */
+/*
 
 for ( let number of checkArray )
 {
@@ -108,3 +110,4 @@ for ( let number of checkArray )
 
 console.log( "You have guessed the random number in ", attemptCounter1, "attempt/s." );
 console.log( "Your score is:===> ", ( 100 - attemptCounter1 ), "...!" );
+*/
