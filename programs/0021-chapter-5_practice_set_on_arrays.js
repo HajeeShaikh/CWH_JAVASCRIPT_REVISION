@@ -37,6 +37,25 @@ do
 
 console.log( "usersArray:===> ", usersArray );
 
+
+// Test 2
+let usersArray = []
+let item;
+do
+{
+
+  item = prompt( "Enter the item :===> " )
+
+  item = Number.parseInt( item )
+
+
+
+  usersArray.push( item )
+
+} while ( item != 0 )
+
+console.log( usersArray );
+
 // Q3) Filter for numbers divisible by 10 from an given array.
 
 // Ans===>
@@ -103,26 +122,38 @@ let squaredArray = []
 
   let mapSquaredArray = givenArray.map( ( item ) => { return item ** 2 } )
   console.log( mapSquaredArray );
-  */
-
-// Q5) Use reduce to calculate factorial of a given number from an array of first n natural numbers (n being the number whose factorial being calculated.)
-
-let a = [ 4 ]
-
-let testFact = a.reduce( ( initial, next ) =>
-{
-  while ( true )
+  
+  // Q5) Use reduce to calculate factorial of a given number from an array of first n natural numbers (n being the number whose factorial being calculated.)
+  
+  let a = [ 1, 2, 3, 4, 5 ]
+  
+  let testFact = a.reduce( ( initial, next ) =>
   {
-    if ( initial != next )
-    {
-      return initial * ( next - 1 )
-    }
-    else
-    {
-      break
-    }
+    return initial * next
+    
+  }, initial = 1 )
+  
+  console.log( testFact );
+  
+  
+  // nice idea if you want to calculate 50! then... you can use following trick but "e" power will come further you can convert it.
+  
+  // upto 21 it is fine.
+  
+  let usersArray = []
+  
+  for ( let i = 1; i <= 21; i++ )
+  {
+    console.log( i );
+    usersArray.push( i )
   }
+  
+  console.log( usersArray );
+  
+  let test = usersArray.reduce( ( a, b ) =>
+  {
+    return a * b
+} )
 
-}, initial = 1 )
-
-console.log( testFact );
+console.log( test );
+    */
