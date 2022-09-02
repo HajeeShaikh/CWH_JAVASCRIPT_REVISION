@@ -8,6 +8,17 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CWH_JS_REVISION</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            h1 {
+                color: #ffffff;
+            }
+
+            h3 {
+                color: #cf1515;
+            }
+
+        </style>
     </head>
 
     <body>
@@ -57,14 +68,43 @@
         <!-- <script src="../programs/0025-chapter-6_javascript_console_object.js" defer></script> -->
         <!-- <script src="../programs/0026-chapter-6_javascript_exercise_1:_solution_shoutouts.js" defer></script> -->
         <!-- <script src="../programs/0027-chapter-6_javascript_alert_prompt_confirm.js" defer></script> -->
-        <script src="../programs/0028-chapter-6_dom_bom_window_object.js" defer></script>
+        <!-- <script src="../programs/0028-chapter-6_dom_bom_window_object.js" defer></script> -->
+        <script src="../programs/0029-chapter-6_practice_set.js" defer></script>
 
 
+        <div class="container">
+            <h1>To run your JS, open the console</h1>
+            <h3><i>In this learning part we will revise the JavaScript with </i><b>:</b> <b>"CWH_JS_REVISION"</b></h3>
+        </div>
 
-        <h1>To run your JS, open the console</h1>
-        <h3><i>In this learning part we will revise the JavaScript with </i><b>:</b> <b>"CWH_JS_REVISION"</b></h3>
+        <script>
+
+            // Making interactive via color change in the script tag {ANOTHER WAY TO ADD JAVASCRIPT}
+
+            let randomColor = "#ffffff"
+
+            setInterval( () =>
+            {
+                console.table( randomColor, "random Color" );
+
+                randomColor = "#" + Math.floor( Math.random() * 16777215 ).toString( 16 );
+
+            }, 3000 );
+
+            // setInterval( () =>
+            // {
+
+            //     console.log( randomColor, "random Color" );
+            // }, 3000 );
 
 
+            setInterval( () =>
+            {
+                // console.log( randomColor, "random Color" );
+
+                document.body.style.backgroundColor = randomColor
+            }, 3000 );  
+        </script>
     </body>
 
 </html>
