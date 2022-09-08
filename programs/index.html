@@ -21,13 +21,24 @@
         </style>
     </head>
 
+    <!-- Example of getting null body (start) -->
+
+    <!-- <script src="../programs/0031-chapter-7_walking_the_dom.js" defer></script> -->
+
+    <!-- If we don't use defer key-word and apply the script above the body then the body shown in console 
+        will be null -->
+
+    <!-- <script src="../programs/0031-chapter-7_walking_the_dom.js"></script> -->
+
+    <!-- Example of getting null body (end) -->
+
     <body>
         <!-- For Room Expenses -->
 
 
 
         <!-- <script src="../programs/Room_Expenses/room_expenses_without_leaves.js" defer></script>
-        <script src="../programs/Room_Expenses/room_expenses_with_leaves.js" defer></script> -->
+            <script src="../programs/Room_Expenses/room_expenses_with_leaves.js" defer></script> -->
 
         <!-- fix self -->
         <!-- <script src="../programs/SELF_Live_Project_Examples/SELF_liveProjectExamples1.js" defer></script> -->
@@ -69,7 +80,11 @@
         <!-- <script src="../programs/0026-chapter-6_javascript_exercise_1:_solution_shoutouts.js" defer></script> -->
         <!-- <script src="../programs/0027-chapter-6_javascript_alert_prompt_confirm.js" defer></script> -->
         <!-- <script src="../programs/0028-chapter-6_dom_bom_window_object.js" defer></script> -->
-        <script src="../programs/0029-chapter-6_practice_set.js" defer></script>
+        <!-- <script src="../programs/0029-chapter-6_practice_set.js" defer></script> -->
+        <!-- <script src="../programs/0030-chapter-6_exercise_2_-_snake_water_and_gun.js" defer></script> -->
+        <!-- <script src="../programs/0031-chapter-7_walking_the_dom.js" defer></script> -->
+        <script src="../programs/0032-chapter-7_accessing_children_of_an_element.js" defer></script>
+
 
 
         <div class="container">
@@ -81,15 +96,19 @@
 
             // Making interactive via color change in the script tag {ANOTHER WAY TO ADD JAVASCRIPT}
 
-            let randomColor = "#ffffff"
+            // let randomColor = "ssfs";
+            var randomColor;
 
             setInterval( () =>
             {
-                console.table( randomColor, "random Color" );
+                // console.table( randomColor, "random Color" );
 
                 randomColor = "#" + Math.floor( Math.random() * 16777215 ).toString( 16 );
 
             }, 3000 );
+
+
+            // console.log( randomColor );
 
             // setInterval( () =>
             // {
@@ -100,10 +119,10 @@
 
             setInterval( () =>
             {
-                // console.log( randomColor, "random Color" );
+                // console.log( randomColor, "random Color after 3s" );
 
                 document.body.style.backgroundColor = randomColor
-            }, 3000 );  
+            }, 6000 );  
         </script>
     </body>
 

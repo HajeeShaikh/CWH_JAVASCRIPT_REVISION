@@ -9,7 +9,7 @@ let age = prompt( "Enter your age =====> : " )
 
 age = Number.parseInt( age )
 
-// alert( age > 18 ? "You can drive...!" : "You can't drive...!" )
+// alert( age >= 18 ? "You can drive...!" : "You can't drive...!" )
 
 age > 18 ? alert( "You can drive...!" ) : alert( "You can't drive...!" )
 
@@ -21,7 +21,7 @@ age > 18 ? alert( "You can drive...!" ) : alert( "You can't drive...!" )
 
 // Ans ===>
 
-
+// method-1
 
 while ( true )
 {
@@ -33,7 +33,7 @@ while ( true )
 
     age = Number.parseInt( age )
 
-    age > 18 ? alert( "You can drive...!" ) : alert( "You can't drive...!" )
+    age >= 18 ? alert( "You can drive...!" ) : alert( "You can't drive...!" )
   }
   else
   {
@@ -45,6 +45,35 @@ while ( true )
 
 */
 
+/*
+// method-2 combined solution for question-1 and question-2
+
+const canDrive = ( age ) =>
+{
+  age >= 18 ? alert( "You can drive...!" ) : alert( "You can not drive...!" )
+}
+
+let runAgain = true
+
+while ( runAgain )
+{
+  let age = prompt( "Enter your age ===> : " )
+  age = Number.parseInt( age )
+  console.log( typeof age );
+
+
+  if ( canDrive( age ) )
+  {
+    console.log( typeof age );
+
+  }
+  else
+  {
+    runAgain = confirm( "Do you want to show prompt again...?" )
+  }
+
+}
+*/
 // Q3) In the previous question, use console.error to log the error if the age entered is negative.
 
 // Ans ===>
