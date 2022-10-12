@@ -132,4 +132,4 @@ if ( ( renamedFileName.includes( "," ) ) )
 */
 
 
-// IT'S MODIFIED AND CORRECTED VERSION IS IN "SELF_liveProjectExamples2.js"
+// IT'S MODIFIED AND CORRECTED VERSION IS IN "fileRenameCorrectly.js"
