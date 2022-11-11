@@ -37,4 +37,4 @@ console.log( out );
 // Simply we can access the value like getAttribute 
 
 console.log( out.personal );
-console.log( out.public );
+console.log( out.public ); 
