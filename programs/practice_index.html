@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="../icons/JS_icon.png">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PRACTICE_JS</title>
+        <!-- for tailwind css  -->
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            clifford: '#da373d',
+                        }
+                    }
+                }
+            }
+        </script>
+
+
+    </head>
+
+    <body>
+        <!-- <script src="../programs/0043-chapter-8_html_insertion_methods.js" defer></script> -->
+        <!-- <script src="../programs/0044-chapter-8_insertadjacenthtml_insertadjacentelement_and_insertadjacenttext.js" defer></script> -->
+        <!-- <script src="../programs/0045-chapter-8_changing_html_classes_using_javascript:_classname_and_classlist.js" defer></script> -->
+        <!-- <script src="../programs/0046-chapter-8_setinterval_and_settimeout_in_javascript.js" defer></script> -->
+        <script src="../programs/0047-chapter-8_introduction_to_browser_events.js" defer></script>
+
+
+
+        <!-- Requisite for 0043-chapter-8_html_insertion_methods.js -->
+
+        <!-- container start (outer)
+        <div class="container">
+            container start (inner)
+            <div id="first">
+                I am a first element
+            </div>
+            container end (inner)
+        </div>
+        container end (outer) -->
+
+        <!-- Requisite 0044-chapter-8_insertadjacenthtml_insertadjacentelement_and_insertadjacenttext.js -->
+
+        <!-- <div class="font-bold m-auto container" id="first">This is first div</div> -->
+
+        <!-- <div id="first" class="font-bold m-auto underline hover:underline-offset-4">Testing Text </div> -->
+
+        <!-- Requisite for 0047-chapter-8_introduction_to_browser_events.js -->
+
+        <div
+
+        class="h-24 w-24 bg-pink-600 border rounded-full m-auto " 
+        id="first" 
+        onmouseover="HandleOnmouseover()"
+        onclick="HandleOnclick()" 
+        ondblclick="HandleDoubleClick()"
+        onmousedown=""
+        onmouseenter=""
+        onmouseout=""
+        onmouseleave=""
+
+        >
+
+        </div>
+
+    </body>
+
+</html>

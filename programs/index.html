@@ -9,8 +9,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CWH_JS_REVISION</title>
         <link rel="stylesheet" href="style.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+        <!-- for tailwind css  -->
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            clifford: '#da373d',
+                        }
+                    }
+                }
+            }
+        </script>
 
         <style>
             h1 {
@@ -100,8 +113,7 @@
         <script src="../programs/0040-chapter-7_exercise_3_-_tell_me_a_joke.js" defer></script>
         <!-- <script src="../programs/0041-chapter-8_innerhtml_outerhtml_and_other_properties.js" defer></script> -->
         <!-- <script src="../programs/0042-chapter-8_html_attributes_and_their_methods.js" defer></script> -->
-        <script src="../programs/0043-chapter-8_html_insertion_methods.js" defer></script>
-
+        <!-- 43 is on practice_index.html  -->
         <!--Searching the DOM  -->
 
         <!-- <nav class="navbar navbar-expand-lg bg-light">
@@ -269,23 +281,26 @@
         <!--End of 0038-chapter-7_practice_set.js -->
 
         <div class="container1">
-            <!-- For 0039-chapter-7_exercise_3_-_tell_me_a_joke.js -->
+            <!-- For 0040-chapter-7_exercise_3_-_tell_me_a_joke.js -->
             <div class="inOut" id="inOut" hidden data-personal="personal-1" data-public="public-2">
-                <div class="card m-auto" style="width: 18rem;">
+                <div class="bg-white p-2 rounded-lg m-auto" style="width: 18rem;">
                     <!-- <img src="https://cdn.xxl.thumbs.canstockphoto.com/laughing-and-pointing-emoticon-vector-clip-art_csp6877101.jpg"
                         class="card-img-top" alt="...loading"> -->
                     <img src="https://media.istockphoto.com/photos/fourleaf-clover-rainbow-and-blue-sky-picture-id1327937744?b=1&k=20&m=1327937744&s=170667a&w=0&h=HiQ_f6NdV-13-ieg7ZPh7Qg_Ue-PyrGsWvnXIsKr8eI="
-                        class="card-img-top" alt="...loading">
+                        class="rounded-lg" alt="...loading">
                     <div class="card-body">
-                        <h5 class="card-title" id="cardTitle1">Learn With Fun</h5>
-                        <p class="card-text " id="joke">Keep learning with a smile</p>
+                        <h5 class="text-lg font-bold" id="cardTitle1">Learn With Fun</h5>
+                        <p class="text-base text-orange-600" id="joke">Keep learning with a smile</p>
                     </div>
                 </div>
             </div>
-            <!-- End of 0039-chapter-7_exercise_3_-_tell_me_a_joke.js -->
+            <!-- End of 0040-chapter-7_exercise_3_-_tell_me_a_joke.js -->
 
-            <h1>To run your JS, open the console</h1>
-            <h3><i>In this learning part we will revise the JavaScript with </i><b>:</b> <b>The Ultimate JavaScript Course</b></h3>
+            <h1 class="font-bold pt-2">To run your JS, open the console</h1>
+            <h3 class="pt-2 pb-2"><i>In this learning part we will revise the JavaScript with </i><b>:</b> <b>The
+                    Ultimate JavaScript Course</b></h3>
+
+            <button onclick="HandleClick()" class="rounded-full bg-white p-2 px-2 ">Go on other Practices </button>
 
         </div>
 
@@ -328,8 +343,9 @@
         </div> -->
 
 
-
         <script>
+
+           const HandleClick = () => { location.href = "http://127.0.0.1:5501/programs/practice_index.html";    } 
 
             // For hidden attribute in card 
 
@@ -365,13 +381,7 @@
                 document.body.style.backgroundColor = randomColor
             }, 6000 );  
         </script>
-        <!-- For Bootstrap  -->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
-            integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
-            crossorigin="anonymous"></script>
+
     </body>
 
 </html>

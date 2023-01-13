@@ -1,10 +1,14 @@
+/*global*/
+
 const randomNumberGenerator = ( max ) =>
 {
   return Math.floor( Math.random() * max );
 }
 
 
-let jokes = [ `Why did an old man fall in a well?
+let jokes = [ 
+
+`Why did an old man fall in a well?
 Because he couldn’t see that well!`,
 
   `Why did the actor fall through the floorboards?
@@ -845,7 +849,7 @@ Little Kid: You can’t do that now. They have CCTVs everywhere!`,
 
   `Knock knock. Who’s there? Olive. Olive who? Olive, you and I don’t care who knows it!`,
 
-  `Knock! Knock! Who’s there? Robin. Robin who? Robin you—hand over the cash!`
+  `Knock! Knock! Who’s there? Robin. Robin who? Robin you—hand over the cash!`,
 
   `Knock, knock. Who’s there? Euripides. Euripides who? Euripides clothes, you pay for them!`,
   
@@ -1209,9 +1213,9 @@ Husband: “Your vision is absolutely perfect.”`,
 
   `The main difference between a person’s wife and a battery is that the battery contains a positive side.`,
 
-  `You are giving a reasonable answer for once, this means I have to increase my medicine dosages.`
+  `You are giving a reasonable answer for once, this means I have to increase my medicine dosages.`,
 
-    `Before telling my wife about a mistake that I have made, I tend to take both of her hands to hold her, that way, she won’t have anything to hit me with.`,
+`Before telling my wife about a mistake that I have made, I tend to take both of her hands to hold her, that way, she won’t have anything to hit me with.`,
   
   `It’s a punishment to love your wife and a sin to love another man’s wife.`,
 
@@ -1318,9 +1322,125 @@ Dude: Now he is, obviously.`,
 
   `I made my bed. Now I have to sleep on the couch so I never have to make it again.`,
 
+  `Luke comes home from his first day of school, and his mother asks, “What did you learn today?”
+“Not enough,” Luke replies. “They said I have to go back tomorrow.”`,
+  
+  `Nate: Why was school easier for cave people?
+Kate: Why?
+Nate: Because there was no history to study!`,
+  
+  `A book never written: “The Best Subject in School” by Jim Class.`,
+
+  `David: Why did the broom get a poor grade in school?
+Dan: I don’t know. Why?
+David: Because it was always sweeping during class!`,
+  
+  `Luke: Why did the M&M go to school?
+Stan: I’m stumped.
+Luke: Because he really wanted to be a Smartie!`,
+  
+  `Chad: Why do magicians do so well in school?
+Josh: I don’t know. Why?
+Chad: They’re good at trick questions.`,
+  
+  `Jacob: Why was the teacher wearing sunglasses to school?
+Leonard: Why?
+Jacob: She had bright students!`,
+  
+  `A book never written: “High School Math” by Cal Q. Luss.`,
+
+  `Joe: What’s the king of all school supplies?
+Moe: I don’t know. What?
+Joe: The ruler.`,
+  
+  `Tom Swiftie: “We have too many quizzes in school!” Tom said testily.`,
+
+  `Teacher: Class, we will have only half a day of school this morning.
+Class: Hooray!
+Teacher: We will have the other half this afternoon.`,
+  
+  `Stevie: Hey, Mom, I got a hundred in school today!
+Mom: That’s great. What in?
+Stevie: A 40 in Reading and a 60 in Spelling.`,
+  
+  `Hunter: What has given Mr. Bubbles nightmares since elementary school?
+Josh: Beats me.
+Hunter: Pop quizzes!`,
+  
+  `What kind of school do you go to if you’re…
+…an ice cream man? Sundae school.
+…a giant? High school.
+…a surfer? Boarding school.
+…King Arthur? Knight school.`,
+  
+  `Mom: What did you do at school today?
+Mark: We did a guessing game.
+Mom: But I thought you were having a math exam.
+Mark: That’s right!`,
+  
+  `Teacher: Donald, what is the chemical formula for water?
+Donald: H-I-J-K-L-M-N-O.
+Teacher: What are you talking about?
+Donald: Yesterday you said it was H to O.`,
+  
+  `Teacher: Daniel, I’ve had to send you to the principal every day this week. What do you have to say for yourself?
+Daniel: I’m glad it’s Friday!`,
+  
+  `Phil: What makes a Cyclops such an effective teacher?
+Cheryl: I don’t know.
+Phil: He has only one pupil.`,
+  
+  `Teacher: Where are the Great Plains located?
+Tommy: At the great airports!`,
+  
+  `Teacher: If you had 13 apples, 12 grapes, 3 pineapples and 3 strawberries, what would you have?
+Billy: A delicious fruit salad.`,
+  
+  `Math teacher: A man from Los Angeles drove toward New York at 250 miles per hour and a man from New York drove toward Los Angeles at 150 m.p.h. Where did they meet?
+Johnny: In jail!`,
+  
+  `Teacher: Tommy, can you tell us where the Declaration of Independence was signed?
+Tommy: Yes, ma’am. At the bottom.`,
+  
+  `Jordan: My teacher says I have to write more clearly.
+Mom: That’s a good idea, Jordan.
+Jordan: No, it’s not. Then she’ll know I can’t spell.`,
+  
+  `Peter: What’s the difference between a teacher and a train?
+Ted: What?
+Peter: A teacher says, “Spit out that gum!” and a train says, “Chew! Chew!”`,
+  
+  `Teacher: Can anyone give me a sentence with a direct object?
+Student: You are pretty.
+Teacher: What’s the direct object?
+Student: A good report card.`,
+  
+  `Teacher: Why can’t you work in an orange juice factory?
+Student: I don’t know. Why?
+Teacher: Because you can’t concentrate!`,
+  
+  `Johnny: Teacher, would you punish me for something I didn’t do?
+Teacher: Of course not.
+Johnny: Good, because I didn’t do my homework.`,
+  
+  `John: Knock, knock.
+Justin: Who’s there?
+John: Gladys.
+Justin: Gladys, who?
+John: Gladys the weekend—no homework!`,
+  
+  `Teacher: Why did you eat your homework, Joe?
+Joe: Because I don’t have a dog.`
+  
   
 ]
 
-let number = randomNumberGenerator( jokes.length )
 
-let dynamic = document.getElementById( "joke" ).innerHTML = jokes[ number ]
+
+setInterval(() => {
+  
+  let  number = randomNumberGenerator( jokes.length )
+  let dynamic = document.getElementById( "joke" ).innerHTML = jokes[ number ]
+}, 10000);
+
+
