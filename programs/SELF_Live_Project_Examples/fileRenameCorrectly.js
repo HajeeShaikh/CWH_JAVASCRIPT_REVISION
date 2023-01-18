@@ -40,7 +40,7 @@ if ( ( currentFileName?.includes( "," ) ) || ( currentFileName?.includes( "&" ) 
 }
 if ( ( commaAndLessFileName?.includes( " " ) ) || ( commaAndLessFileName?.includes( "__" ) ) )
 {
-  var comAndSpaceLessFileName = commaAndLessFileName.replace( / /g, "_" ).replace( /__/g, "_" ).replace( /__/g, "_" )
+  var comAndSpaceLessFileName = commaAndLessFileName.replace( /["/"||":"]/g, " " ).replace( / /g, "_" ).replace( /__/g, "_" ).replace( /__/g, "_" )
   console.log( "comAndSpaceLessFileName:===>", comAndSpaceLessFileName );
 } else
 {

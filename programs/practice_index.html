@@ -30,7 +30,24 @@
         <!-- <script src="../programs/0044-chapter-8_insertadjacenthtml_insertadjacentelement_and_insertadjacenttext.js" defer></script> -->
         <!-- <script src="../programs/0045-chapter-8_changing_html_classes_using_javascript:_classname_and_classlist.js" defer></script> -->
         <!-- <script src="../programs/0046-chapter-8_setinterval_and_settimeout_in_javascript.js" defer></script> -->
-        <script src="../programs/0047-chapter-8_introduction_to_browser_events.js" defer></script>
+        <!-- <script src="../programs/0047-chapter-8_introduction_to_browser_events.js" defer></script> -->
+        <!-- <script src="../programs/0048-chapter-8_handling_browser_events.js" defer></script> -->
+        <!-- <script src="../programs/0049-chapter-8_practice_set.js" defer></script> -->
+        <!-- <script defer>//0050 is equal to 0040</script> -->
+        <!-- <script src="../programs/0051-chapter-8_exercise_4_clock_using_javascript.js" defer></script> -->
+        <!-- <script src="../programs/0052-chapter-9_introduction_to_callbacks.js" defer></script> -->
+        <!-- <script src="../programs/0053-chapter-9_callback_hell_and_pyramid_of_doom.js" defer></script> -->
+        <!-- <script src="../programs/0054-chapter-9_introduction_to_promises.js" defer></script> -->
+        <!-- <script src="../programs/0055-chapter-9_promise_.then()_and_.catch().js" defer></script> -->
+        <!-- <script src="../programs/0056-chapter-9_promise_chaining_.then()_calls.js" defer></script> -->
+        <!-- <script src="../programs/0057-chapter-9_attaching_multiple_handlers_to_a_promise.js" defer></script> -->
+        <!-- <script src="../programs/0058-chapter-9_the_promise_api.js" defer></script> -->
+        <!-- <script src="../programs/0059-chapter-9_async_await_in_javascript.js" defer></script> -->
+        <!-- <script src="../programs/0060-chapter-9_error_handling_try_and_catch.js" defer></script> -->
+        <!-- <script src="../programs/0061-chapter-9_the_error_object_custom_errors.js" defer></script> -->
+        <!-- <script src="../programs/0062-chapter-9_the_finally_clause.js" defer></script> -->
+        <!-- <script src="../programs/0063-chapter-9_practice_set.js" defer></script> -->
+        <script src="../programs/0065-chapter-9_exercise_5_hackerman.js" defer></script>
 
 
 
@@ -54,21 +71,121 @@
 
         <!-- Requisite for 0047-chapter-8_introduction_to_browser_events.js -->
 
-        <div
+        <!-- <div
 
         class="h-24 w-24 bg-pink-600 border rounded-full m-auto " 
         id="first" 
         onmouseover="HandleOnmouseover()"
         onclick="HandleOnclick()" 
         ondblclick="HandleDoubleClick()"
-        onmousedown=""
-        onmouseenter=""
-        onmouseout=""
-        onmouseleave=""
+        onmousedown="HandleOnmousedown()"
+        onmouseenter="HandleOnmouseenter()"
+        onmouseout="HandleOnmouseout()"
+        onmouseleave="HandleOnmouseleave()"
 
         >
 
-        </div>
+        </div> -->
+
+        <!-- Requisite 0048-chapter-8_handling_browser_events.js -->
+        <!-- <div>
+            <button id="eventCheck" class="bg-green-800 rounded-sm p-2 text-white" >Click Here</button>
+        </div> -->
+
+        <!-- Requisite for 0049-chapter-8_practice_set.js -->
+
+        <!-- Q1) Write a program to show different alerts when clicked on different buttons -->
+
+        <!-- <div>
+            <button class="bg-red-800 text-white p-2 rounded-lg" onclick="alert('Danger')">Danger</button>
+            <button class="bg-green-800 text-white p-2 rounded-lg" onclick="alert('Success')">Success</button>
+            <button class="bg-blue-800 text-white p-2 rounded-lg" onclick="alert('Blue')">Blue</button>
+        </div> -->
+
+        <!-- Q2) Create a website which is capable of storing bookmarks of your favourite website using href -->
+
+        <!-- <div class="pt-5" >
+            <a href="https://www.google.com"><button class="bg-red-800 text-white p-2 rounded-lg">Google</button></a>
+            <a href="https://www.facebook.com"><button class="bg-green-800 text-white p-2 rounded-lg">Facebook</button></a>
+            <a href="https://www.twitter.com"><button class="bg-blue-800 text-white p-2 rounded-lg">Twitter</button></a>
+        </div> -->
+
+        <!-- Q3) Repeat Q2 using event listeners -->
+
+        <!-- <div class="pt-5">
+          <button class="bg-red-800 text-white p-2 rounded-lg" id="google">Google</button>
+           <button class="bg-green-800 text-white p-2 rounded-lg" id="facebook">Facebook</button>
+           <button class="bg-blue-800 text-white p-2 rounded-lg" id="twitter">Twitter</button>
+        </div> -->
+
+        <!-- Q4) in Js file -->
+
+        <!-- Q5) Create a bulb -->
+
+        <!-- <div class="mt-10 h-24 w-24 rounded-full border " id="bulb" >
+          
+        </div> -->
+
+        <!-- Requisite for 0051-chapter-8_exercise_4_clock_using_javascript.js -->
+
+        <!-- <div
+            class="m-auto w-[50%] h-[50%] pt-10 flex justify-center item-center bg-orange-600 rounded-full mt-12 border ">
+            <div class="grid grid-cols-6 gap-1">
+                <div class="col-span-2">
+                    <div class="flex-col">
+                        <div class="font-bold text-2xl flex justify-center ">
+                            Hours
+                        </div>
+                        <div>
+                            <p class="text-green-800 text-2xl flex justify-center " id="hours">10 </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-2">
+                    <div class="flex-col">
+                        <div class="font-bold text-2xl flex justify-center">
+                            Minutes
+                        </div>
+                        <div>
+                            <p class="text-green-800 text-2xl flex justify-center" id="minutes">10 </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-2">
+                    <div class="flex-col">
+                        <div class="font-bold text-2xl flex justify-center">
+                            Seconds
+                        </div>
+                        <div>
+                            <p class="text-green-800 text-2xl flex justify-center" id="seconds">10 </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-6">
+                    <div class="flex-col">
+                        <div class="font-bold text-2xl flex justify-center">
+                            Date (DD/MM/YY)
+                        </div>
+                        <div>
+                            <p class="text-orange-800 text-2xl flex justify-center" id="date">10 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- <div class="w-[50%] h-[50%] bg-blue-600 rounded-full m-auto mt-12 border">
+            <div class="rounded-full flex justify-center" id="newClock">
+
+            </div>
+        </div> -->
+
+        <!-- Requisite for 0065-chapter-9_exercise_5_hackerman.js -->
+
+
 
     </body>
 
