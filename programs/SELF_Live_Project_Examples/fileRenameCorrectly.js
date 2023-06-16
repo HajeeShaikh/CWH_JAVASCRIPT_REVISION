@@ -29,9 +29,9 @@ let currentFileName = prompt( "Enter your file name:===> " )
 
 // Here filtered the file name for unnecessary data
 
-if ( ( currentFileName?.includes( "," ) ) || ( currentFileName?.includes( "&" ) ) )
+if ( ( currentFileName?.includes( "," ) ) || ( currentFileName?.includes( "&" ) )||(currentFileName?.includes(":")) )
 {
-  var commaAndLessFileName = currentFileName.replace( /,/g, " " ).replace( /&/g, " " )
+  var commaAndLessFileName = currentFileName.replace( /,/g, " " ).replace( /&/g, " " ).replace(/:/g, " ")
   console.log( "commaAndLessFileName:===>", commaAndLessFileName );
 
 } else
